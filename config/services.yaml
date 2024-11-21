@@ -22,3 +22,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+            # uncomment the following if your Redis server requires a password
+            # - auth:
+            #     - '%env(REDIS_PASSWORD)%'
+
+            # uncomment the following if your Redis server requires a user and a password (when user is not default)
+            # - auth:
+            #     - ['%env(REDIS_USER)%','%env(REDIS_PASSWORD)%']
